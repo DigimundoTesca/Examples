@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>hola</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <title>hola</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
 </head>
 <body>
-	<div class="container">
-		<h1 class="header">Experimento con jquery</h1> 
+  <div class="container">
+    <h1 class="header">Experimento con jquery</h1> 
 
-		<div class="row">
+    <div class="row">
 
-			<table class="table bordered">
-				<thead>
-					<tr>
-						<th>id</th>
-						<td>nombre</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th class="id">1</th>
-						<td>Hola mundo!</td>
-					</tr>
-					<tr>
-						<th class="id">2</th>
-						<td>Tengo hambre!</td>
-					</tr>
-					<tr>
-						<th class="id">3</th>
-						<td>Ola k ase?</td>
-					</tr>
-					<tr>
-						<th class="id">3</th>
-						<td>:v</td>
-					</tr>
-					<tr>
-						<th class="id">3</th>
-						<td>XD</td>
-					</tr>
-					<tr>
-						<th class="id">10</th>
-						<td>#HoraSad</td>
-					</tr>
-					<tr>
-						<th class="id">20</th>
-						<td>#HoraHappy</td>
-					</tr>
-					<tr>
-						<th class="id">30</th>
-						<td>jijitl</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="row">	
-			<div id="doc">
-				<span class="nombre">DOC</span>
-				<span class="edad">39</span>
-			</div>
-			<div id="baruzh">
-				<span class="nombre">ESE LOCO :v </span>
-				<span class="edad">25</span>
-			</div>
-		</div>
-	</div>
+      <table class="table bordered">
+        <thead>
+          <tr>
+            <th>id</th>
+            <td>nombre</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="id">1</th>
+            <td>Hola mundo!</td>
+          </tr>
+          <tr>
+            <th class="id">2</th>
+            <td>Tengo hambre!</td>
+          </tr>
+          <tr>
+            <th class="id">3</th>
+            <td>Ola k ase?</td>
+          </tr>
+          <tr>
+            <th class="id">3</th>
+            <td>:v</td>
+          </tr>
+          <tr>
+            <th class="id">3</th>
+            <td>XD</td>
+          </tr>
+          <tr>
+            <th class="id">10</th>
+            <td>#HoraSad</td>
+          </tr>
+          <tr>
+            <th class="id">20</th>
+            <td>#HoraHappy</td>
+          </tr>
+          <tr>
+            <th class="id">30</th>
+            <td>jijitl</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">   
+      <div id="doc">
+        <span class="nombre">DOC</span>
+        <span class="edad">39</span>
+      </div>
+      <div id="baruzh">
+        <span class="nombre">ESE LOCO :v </span>
+        <span class="edad">25</span>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -73,38 +73,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
 <script type="text/javascript" charset="utf-8" async >
-	$(function() {
-		var objetos = $('tr');
+  $(function() {
+    var objetos = $('tr');
 
-		// console.log(objetos);
+        // console.log(objetos);
 
-		var lista_id = []
+        var lista_id = []
 
-		objetos.each(function(index, element) {
-			id_element = parseInt($(element).find('th.id').text().trim())
-			if (!isNaN(id_element)) {
-				lista_id.push(id_element)
-				console.log(lista_id);
-			}
-		});
+        objetos.each(function(index, element) {
+          id_element = parseInt($(element).find('th.id').text().trim())
+          if (!isNaN(id_element)) {
+            lista_id.push(id_element)
+            console.log(lista_id);
+          }
+        });
 
-		// OLA K ASE? LEYENDO ESTE CODIGO O K ASE? :v
+        // OLA K ASE? LEYENDO ESTE CODIGO O K ASE? :v
 
-		// var el_doc = $('#doc');
-		// var el_bar = $('#baruzh');
+        // var el_doc = $('#doc');
+        // var el_bar = $('#baruzh');
 
-		// var nombre_doc = el_doc.find('span.nombre')
+        // var nombre_doc = el_doc.find('span.nombre')
 
-		// var nuevo_nombre_doc = 'Itzli';
+        // var nuevo_nombre_doc = 'Itzli';
 
-		// // Cambiamos el nombre al doc :v 
+        // // Cambiamos el nombre al doc :v 
 
-		// nombre_doc.text(nuevo_nombre_doc);
+        // nombre_doc.text(nuevo_nombre_doc);
 
-		// console.log(nombre_doc.text());
+        // console.log(nombre_doc.text());
 
 
-		// console.log(el_bar);
-	});	
-</script>
-</html>
+        // console.log(el_bar);
+      }); 
+    </script>
+    </html>
